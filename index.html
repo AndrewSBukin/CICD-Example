@@ -9,7 +9,7 @@
 			url: "config.json",
 			success: function(data){
 				console.log(data);
-			   $('#lbl1').html(data);
+			   $('#lbl1').html(JSON.stringify(data));
 			},
 			error: function (){
 				console.log("Error");
