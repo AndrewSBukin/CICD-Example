@@ -1,5 +1,25 @@
 <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+		$.ajax({
+			type: "GET",
+			dataType: "json",
+			url: "config.jason",
+			success: function(data){
+				console.log(data);
+			   $('#lbl1').html(data);
+			},
+			error: function (){
+				console.log("Error");
+			}
+		});
+    });
+</script> 
+</head>
 <body>
-<h1>Main version 1.0</h1>
+<h1>Основная версия 1.0</h1>
+<h2>Config: <span id="lbl1"></span></h2>
 </body>
 </html>
