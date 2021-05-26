@@ -1,0 +1,164 @@
+// stylelint-disable
+
+.icon-base-pseudo {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+.icon-char(@filename) {
+	@alphabet-down: "\E001";
+	@alphabet-up: "\E002";
+	@angle-down: "\E003";
+	@angle-left: "\E004";
+	@angle-right: "\E005";
+	@angle-up: "\E006";
+	@answer: "\E007";
+	@calendar: "\E008";
+	@check: "\E009";
+	@clean: "\E00A";
+	@close: "\E00B";
+	@download: "\E00C";
+	@edit: "\E00D";
+	@eye: "\E00E";
+	@file: "\E00F";
+	@filter: "\E010";
+	@key: "\E011";
+	@lock: "\E012";
+	@menu: "\E013";
+	@more: "\E014";
+	@notification-hover: "\E015";
+	@notification: "\E016";
+	@plus: "\E017";
+	@power: "\E018";
+	@qoute: "\E019";
+	@save: "\E01A";
+	@search: "\E01B";
+	@sort-down: "\E01C";
+	@sort-full: "\E01D";
+	@sort-up: "\E01E";
+	@sort: "\E01F";
+	@sorting-down: "\E020";
+	@sorting-up: "\E021";
+	@upload: "\E022";
+	
+	content: @@filename;
+}
+
+.icon(@filename, @insert: before) {
+	@pseudo-selector: ~":@{insert}";
+
+	&@{pseudo-selector} {
+		&:extend(.icon-base-pseudo);
+		.icon-char(@filename);
+	}
+}
+
+.icon-alphabet-down {
+	.icon(alphabet-down);
+}
+.icon-alphabet-up {
+	.icon(alphabet-up);
+}
+.icon-angle-down {
+	.icon(angle-down);
+}
+.icon-angle-left {
+	.icon(angle-left);
+}
+.icon-angle-right {
+	.icon(angle-right);
+}
+.icon-angle-up {
+	.icon(angle-up);
+}
+.icon-answer {
+	.icon(answer);
+}
+.icon-calendar {
+	.icon(calendar);
+}
+.icon-check {
+	.icon(check);
+}
+.icon-clean {
+	.icon(clean);
+}
+.icon-close {
+	.icon(close);
+}
+.icon-download {
+	.icon(download);
+}
+.icon-edit {
+	.icon(edit);
+}
+.icon-eye {
+	.icon(eye);
+}
+.icon-file {
+	.icon(file);
+}
+.icon-filter {
+	.icon(filter);
+}
+.icon-key {
+	.icon(key);
+}
+.icon-lock {
+	.icon(lock);
+}
+.icon-menu {
+	.icon(menu);
+}
+.icon-more {
+	.icon(more);
+}
+.icon-notification-hover {
+	.icon(notification-hover);
+}
+.icon-notification {
+	.icon(notification);
+}
+.icon-plus {
+	.icon(plus);
+}
+.icon-power {
+	.icon(power);
+}
+.icon-qoute {
+	.icon(qoute);
+}
+.icon-save {
+	.icon(save);
+}
+.icon-search {
+	.icon(search);
+}
+.icon-sort-down {
+	.icon(sort-down);
+}
+.icon-sort-full {
+	.icon(sort-full);
+}
+.icon-sort-up {
+	.icon(sort-up);
+}
+.icon-sort {
+	.icon(sort);
+}
+.icon-sorting-down {
+	.icon(sorting-down);
+}
+.icon-sorting-up {
+	.icon(sorting-up);
+}
+.icon-upload {
+	.icon(upload);
+}

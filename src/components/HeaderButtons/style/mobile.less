@@ -1,0 +1,22 @@
+// default
+
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable selector-pseudo-class-no-unknown */
+@import '../../../style/colors.less';
+
+.headerLink {
+    color: @Dark_grayish_blue_1;
+    transition: color 0.3s ease;
+
+    &.active {
+        color: @White;
+    }
+
+    &:hover {
+        color: @White;
+    }
+}
+
+// :global(.router-link-exact-active) {
+//     color: @White;
+// }

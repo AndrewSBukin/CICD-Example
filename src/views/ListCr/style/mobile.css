@@ -1,0 +1,54 @@
+.date-from {
+    font-size: 14px;
+    line-height: 20px;
+    color: #757a8f;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 0 16px;
+    height: 48px;
+    border: 1px solid #e5e5eb;
+    border-radius: 4px;
+    transition: border .3s;
+    appearance: none;
+    text-overflow: ellipsis;
+    font: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+    content: "";
+    border: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+main {
+    height: auto;
+}
+
+.profile-main-wrapper {
+    height: 100%;
+}
+
+.b-page-wrapper {
+    height: 0;
+}

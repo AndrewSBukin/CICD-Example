@@ -1,0 +1,71 @@
+/* stylelint-disable */
+.page-fade-enter-active, .page-fade-leave-active {
+    transition: opacity 0.5s;
+}
+.page-fade-enter, .page-fade-leave-to {
+    opacity: 0;
+}
+.dropdown-enter-active, .dropdown-leave-active {
+    transition: opacity 0.2s ease 0.1s;
+}
+.dropdown-enter, .dropdown-leave-to {
+    opacity: 0;
+}
+
+.anim-list-enter, .anim-list-leave-to {
+    opacity: 0;
+}
+.anim-list-leave-active {
+    position: absolute;
+}
+
+.comment-enter-active .padding-wrapper, .comment-leave-active .padding-wrapper {
+    transition: margin 1s ease, padding 1s ease;
+}
+.comment-enter-active .padding-wrapper > div, .comment-leave-active .padding-wrapper > div {
+    overflow: hidden;
+    transition: height 1s ease;
+}
+.comment-enter-active .padding-wrapper > div {
+    height: 0;
+}
+.comment-leave-to .padding-wrapper > div {
+    height: 0!important;
+}
+.comment-enter .padding-wrapper, .comment-leave-to .padding-wrapper {
+    margin-bottom: 0!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.filter-enter-active.padding-wrapper, .filter-leave-active.padding-wrapper {
+    transition: margin 1s ease, padding 1s ease;
+}
+.filter-enter-active.padding-wrapper > div, .filter-leave-active.padding-wrapper > div {
+    overflow: hidden;
+    transition: height 1s ease;
+}
+.filter-enter-active.padding-wrapper > div {
+    height: 0;
+}
+.filter-leave-to.padding-wrapper > div {
+    height: 0!important;
+}
+.filter-enter.padding-wrapper, .filter-leave-to.padding-wrapper {
+    margin-bottom: 0!important;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+
+
+.burger-enter-active, .burger-leave-active {
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+.burger-enter-active {
+    height: 0;
+}
+.burger-leave-to {
+    height: 0!important;
+}

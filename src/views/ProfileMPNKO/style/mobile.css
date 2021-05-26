@@ -1,0 +1,16 @@
+/* footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+} */
+main {
+  height: auto;
+}
+
+.profile-main-wrapper {
+  height: 100%;
+}
+
+.b-page-wrapper {
+  height: 0;
+}

@@ -1,0 +1,127 @@
+// default
+@import '../../../style/colors.less';
+
+.link {
+    // margin: 0 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    svg {
+        fill: @Pure_blue;
+        width: 15px;
+    }
+}
+
+.adminPanel {
+    position: absolute;
+    margin-left: 10px;
+    background-color: @White;
+    min-width: 231px;
+    box-shadow: 0 1px 5px rgba(4, 9, 42, 0.1), 0 15px 30px rgba(4, 9, 42, 0.1);
+    border-radius: 4px;
+    padding: 10px 4px;
+    z-index: 2;
+    margin-top: 10px;
+    transform: translateX(-64%);
+
+    // &::before,
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: -14px;
+    //     left: 50%;
+    //     border: 7px solid transparent;
+    //     margin-left: 39px;
+    // }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: 50%;
+        border: 7px solid transparent;
+        margin-left: 39px;
+        border-bottom: 7px solid @White;
+        z-index: 2;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        border: 7px solid transparent;
+        margin-left: 39px;
+        border-bottom: 8px solid  rgba(4, 9, 42, 0.1);
+        z-index: 1;
+        top: -15px;
+    }
+}
+
+.adminPanelWrapper {
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    color: @Very_dark_blue;
+}
+
+.adminPanelText {
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: none;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    color: @White;
+    border: none;
+    background: @Pure_blue;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    svg {
+        color: @Very_soft_blue;
+        margin-right: 8px;
+    }
+
+    &:hover {
+        color: @White;
+        background: @Dark_blue_1;
+    }
+
+    &:active {
+        color: @Very_soft_blue;
+        background: @Dark_blue;
+    }
+
+    &:disabled {
+        color: @Grayish_blue;
+        background: @Light_grayish_blue_3;
+        cursor: auto;
+
+        &:hover {
+            color: @Grayish_blue;
+            background: @Light_grayish_blue_3;
+        }
+
+        svg {
+            color: @Grayish_blue;
+        }
+    }
+}
